@@ -1,0 +1,180 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500">
+<!DOCTYPE html>
+<html>
+    <style>
+        #title{
+            font-size: 40px;
+        }
+        #description{
+            font-size: 20px;
+        }
+        #survey-form{
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+        }
+        #name{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+            border-style: double;
+            border-color: rgb(124, 210, 250);
+        }
+        #email{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+            border-style: double;
+            border-color: rgb(124, 210, 250);
+        }
+        #number{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+            border-style: double;
+            border-color: rgb(124, 210, 250);
+            width: 193px;
+        }
+        body{
+            position: relative;
+            background: linear-gradient(180deg,lightskyblue,rgb(40, 241, 191));
+            font-family: 'Raleway', Helvetica, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+        .container{
+            
+            background-color: rgb(241, 241, 232);
+            padding: 15px;
+            margin: 10px;
+            margin-right: 20%;
+            margin-left: 20%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            border-radius: 1%;
+            
+        }
+       .text{
+           text-align: center;
+           padding: 10px;
+           margin: 10px;
+
+       }
+       #name-label{
+           
+       }
+       #number-label{
+           
+       }
+       .rightTab {
+           display: inline-block;
+           text-align: left;
+           width: 57%;
+           vertical-align: middle;
+       }
+       .labels{
+           display: inline-block;
+           padding: 5px;
+           width: 40%;
+           text-align: right;
+           vertical-align: top;
+           margin-top: 10px;
+       }
+       #dropdown{
+           padding: 10px;
+           margin: 10px;
+       }
+       #submit{
+           background-color: rgb(34, 143, 211);
+           color: white;
+           padding: 7px;
+           margin: 7px;
+           font-family: 'Raleway', Helvetica, sans-serif;
+           font-size: 1em;
+           border-radius: 4px;
+       }
+       #textarea{
+           padding: 10px;
+           margin:10px;
+       }
+    </style>
+     <head>
+        <h1 id="title">SURVEY FORM</h1>
+     </head>
+     <div class="container">
+    <body class="text">
+        <p id="description"> Let us know to improve our service </p>
+        <form id="survey-form">
+            <div class="labels">
+             <label id="name-label">* Name :</label> 
+            </div>
+            <div class="rightTab">
+             <input id="name" type="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="labels">
+              <label id="email-label" >* Email :</label>
+            </div>
+            <div class="rightTab">
+             <input id="email" type="email" placeholder="Enter Your Email ID" required> 
+            </div>
+            <div class="labels">
+                <label id="number-label">* Number:</label> 
+            </div>
+            <div class="rightTab">
+            <input id="number" type="number" placeholder="Enter Phone Number" min="99999999999" max="999999999999">
+            </div>
+           <div class="labels">
+            <label for="currentpos">
+               * Which option describe your current role?
+            </label>
+           </div>
+           <div class="rightTab">
+         <select id="dropdown" name="currentpos" >
+            <option disabled value="">Select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time">Full-time job</option>
+          <option value="part-time">Part-time job</option>
+          <option value="own=business">Own business</option>
+        </select>
+     </div>
+        <label for="recommend" class="labels">* Would you recommend our website to your friend</label>
+        <div class="rightTab"> 
+             
+            <div><label> <input type="radio" name="recommend" value="definitely">Definitely</label></div>
+            <div><label> <input type="radio" name="recommend" value="mayy-be">May be</label></div>
+            <div><label>  <input type="radio" name="recommend" value="absolutelt-no">Absolutely No</label></div>
+        
+        </div>
+        <div class="labels">
+            <label for="most-like">* What do you most like in our website?</label>
+        </div>
+        <div class="rightTab">
+            <select id="dropdown" name="most-like">
+                    <option disabled selected value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="project">Projects</option>
+                <option value="forum">Forum</option>
+                <option value="open-source">Open source</option>
+            </select>
+        </div>
+            <label class="labels">* What thing(s) should improve in future?<br>(Check all if applicable)</label>
+            <div class="rightTab">   
+         <div><label><input type="checkbox" value="1">Front-end Projects</label></div>
+         <div><label><input type="checkbox" value="2">Back-end Projects</label></div>
+         <div><label><input type="checkbox" value="3">Data Visualisation</label></div>
+         <div><label><input type="checkbox" value="4">Tutorial Videos   </label></div>
+         <div><label><input type="checkbox" value="5">Challenges        </label></div>
+         <div><label><input type="checkbox" value="6">Documentation     </label></div>
+         <div><label><input type="checkbox" value="7">Forums            </label></div>
+        </div>
+        <div class="labels">
+        <label>Any Comment Or Suggestion?</label>
+     </div>
+      <div class="rightTab">
+         <textarea id="textarea" name="Comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here ..."></textarea>
+        </div>
+         <div><button type="submit" id="submit">Submit</button></div>
+        </form>
+    </body>
+</div>
+<footer>Developed by <a href="https://codepen.io/osamakhan/" target="_blank">Osama Khan</a></footer>
+</html>
